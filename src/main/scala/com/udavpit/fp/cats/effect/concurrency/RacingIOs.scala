@@ -4,7 +4,7 @@ import cats.effect.kernel.{Fiber, Outcome}
 import cats.effect.{IO, IOApp}
 
 import scala.concurrent.duration.FiniteDuration
-import scala.concurrent.duration.*
+import scala.concurrent.duration._
 
 object RacingIOs extends IOApp.Simple {
 

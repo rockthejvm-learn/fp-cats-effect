@@ -6,7 +6,7 @@ import cats.effect.{IO, IOApp}
 
 import java.io.{File, FileReader}
 import java.util.Scanner
-import scala.concurrent.duration.*
+import scala.concurrent.duration._
 
 object Resources extends IOApp.Simple {
 

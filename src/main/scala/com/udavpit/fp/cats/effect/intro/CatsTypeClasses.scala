@@ -24,7 +24,7 @@ object CatsTypeClasses {
   // generalizable "mapping" APIs
   def increment[F[_]](container: F[Int])(implicit functor: Functor[F]): F[Int] = functor.map(container)(_ + 1)
 
-  import cats.syntax.functor.*
+  import cats.syntax.functor._
 
   def increment_v2[F[_]: Functor](container: F[Int]): F[Int] = container.map(_ + 1)
 
@@ -112,7 +112,7 @@ object CatsTypeClasses {
   val listTraverse                  = Traverse[List]
   val optionList: Option[List[Int]] = listTraverse.traverse(List(1, 2, 3))(x => Option(x))
 
-  import cats.syntax.traverse.*
+  import cats.syntax.traverse._
 
   val optionList_v2: Option[List[Int]] = List(1, 2, 3).traverse(x => Option(x))
 

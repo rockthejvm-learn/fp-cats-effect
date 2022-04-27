@@ -2,9 +2,9 @@ package com.udavpit.fp.cats.effect.coordination
 
 import cats.effect.kernel.{Deferred, Ref}
 import cats.effect.{IO, IOApp}
-import cats.syntax.traverse.*
+import cats.syntax.traverse._
 
-import scala.concurrent.duration.*
+import scala.concurrent.duration._
 
 object Defers extends IOApp.Simple {
 

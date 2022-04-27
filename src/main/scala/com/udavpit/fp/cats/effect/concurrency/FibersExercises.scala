@@ -3,8 +3,8 @@ package com.udavpit.fp.cats.effect.concurrency
 import cats.effect.kernel.Outcome.{Canceled, Errored, Succeeded}
 import cats.effect.{IO, IOApp}
 
-import scala.concurrent.duration.*
-import com.udavpit.fp.cats.effect.util.*
+import scala.concurrent.duration._
+import com.udavpit.fp.cats.effect.util._
 
 object FibersExercises extends IOApp.Simple {
 
